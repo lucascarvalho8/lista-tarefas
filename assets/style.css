@@ -1,0 +1,124 @@
+/* Estilos gerais para o corpo da página */
+body {
+    background-color: #471212; /* Cor de fundo vermelho escuro */
+    color: #fff; /* Cor do texto branco */
+    font-family: Roboto, sans-serif; /* Fonte principal Roboto com fallback para sans-serif */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+}
+
+/* Container principal da aplicação */
+.container {
+    max-width: 500px; /* Largura máxima do container */
+    margin: 30px auto; /* Centraliza o container com margem superior/inferior de 30px */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #350303; /* Cor de fundo vermelho mais escuro */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para o título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Grupo de elementos de entrada (pesquisa e adição) */
+.input-group {
+    display: flex; /* Layout flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 15px; /* Espaçamento entre elementos */
+}
+
+/* Container da barra de pesquisa */
+.search-container {
+    position: relative; /* Permite posicionamento absoluto dos elementos filhos */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilo do ícone de pesquisa */
+.search-icon {
+    position: absolute; /* Posicionamento absoluto em relação ao container */
+    right: 10px; /* Distância da direita */
+    top: 50%; /* Posiciona no centro vertical */
+    transform: translateY(-50%); /* Ajuste fino para centralização vertical */
+    color: #dd0e0e; /* Cor do ícone vermelho */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+/* Container para adicionar novas tarefas */
+.add-task {
+    display: flex; /* Layout flexbox */
+    gap: 10px; /* Espaçamento entre elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilo base para inputs */
+input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Modelo de caixa que inclui padding na largura */
+}
+
+/* Ajuste específico para o input de pesquisa */
+#searchInput {
+    padding-right: 35px; /* Espaçamento à direita para o ícone */
+}
+
+/* Estilo base para botões */
+button {
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: #3f040e; /* Cor de fundo vermelho escuro */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+    white-space: nowrap; /* Impede quebra de linha */
+    flex-shrink: 0; /* Impede que o botão encolha */
+}
+
+/* Efeito hover para botões */
+button:hover {
+    background-color: #b80808; /* Cor de fundo vermelho mais claro */
+}
+
+/* Estilo para a lista de tarefas */
+ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0; /* Remove padding padrão */
+    margin-top: 20px; /* Margem superior */
+}
+
+/* Estilo para cada item da lista */
+li {
+    padding: 12px; /* Espaçamento interno */
+    background-color: #7e0606; /* Cor de fundo vermelho */
+    margin-bottom: 8px; /* Margem inferior */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: flex; /* Layout flexbox */
+    justify-content: space-between; /* Espaço entre elementos */
+    align-items: center; /* Alinhamento vertical ao centro */
+}
+
+/* Efeito hover para itens da lista */
+li:hover {
+    background-color: #1f0101; /* Cor de fundo mais escura */
+}
+
+/* Estilo para o texto da tarefa */
+li span {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-right: 10px; /* Margem à direita */
+    word-break: break-word; /* Quebra de palavras longas */
+}
+
+/* Estilo específico para botões de ação */
+.deleteButton, .editButton {
+    margin-left: 8px; /* Margem à esquerda */
+    padding: 6px 12px; /* Espaçamento interno reduzido */
+    font-size: 14px; /* Tamanho de fonte reduzido */
+}
